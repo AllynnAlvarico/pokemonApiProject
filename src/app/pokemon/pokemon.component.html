@@ -1,0 +1,32 @@
+<div class="w-64 h-96 border-2 mx-auto">
+  <div class="border-8 h-96" >
+    <div class="flex flex-row justify-between">
+      <h1 id="pokemon-name" class="text-lg font-medium m-2">{{pokemon_name | titlecase}}</h1>
+      <div class="flex flex-col justify-center m-1">
+        <h4 id="pokemon-type" class="text-sm self-center">{{pokemon_type | titlecase}}</h4>
+        <h4 id="pokemon-id" class="text-sm self-center">{{pokemon_id}}</h4>
+      </div>
+    </div>
+    <img id="pokemon-sprite" class="mx-auto" alt="{{pokemon_name}}" [src]="official_img_url" width="180" height="180">
+    <div class="flex flex-row justify-center gap-8 text-xs">
+      <div class="flex flex-col">
+        <p class="self-center">{{pokemon_type | titlecase}}</p>
+        <p class="self-center">Pokemon</p>
+      </div>
+      <div class="flex flex-col">
+        <p class="self-center">Height</p>
+        <p class="self-center">{{ pokemon_height?.toFixed(2) }} m</p>
+      </div>
+      <div class="flex flex-col">
+        <p class="self-center">Weight</p>
+        <p class="self-center">{{pokemon_weight?.toFixed(2)}} kg</p>
+      </div>
+    </div>
+    <div class="flex flex-col gap-1 my-1 ml-4 text-sm">
+      <h1 id="ability-1" class="border w-11/12">Ability 1</h1>
+      <h1 id="ability-2" class="border w-11/12">Ability 2</h1>
+      <h1 id="ability-3" class="border w-11/12">Ability 3</h1>
+      <h1 id="ability-4" class="border w-11/12">Ability 4</h1>
+    </div>
+  </div>
+</div>
