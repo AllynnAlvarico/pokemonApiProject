@@ -21,7 +21,7 @@
             ],
             "tsConfig": "tsconfig.app.json",
             "assets": [
-              "src/pokemon-favicon.ico",
+              "src/pokemon_favicon.ico",
               "src/assets"
             ],
             "styles": [
@@ -94,5 +94,8 @@
         }
       }
     }
+  },
+  "cli": {
+    "analytics": "37282c47-d9e9-423a-aeae-288cf3e211b4"
   }
 }
